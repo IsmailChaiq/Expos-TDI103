@@ -6,8 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using Exposé_TDI103;
+using System.IO;
+using System.Diagnostics;
 
 namespace Exposé_TDI103
 {
@@ -31,7 +34,7 @@ namespace Exposé_TDI103
         private void btnListView_Click(object sender, EventArgs e)
         {
             xListView.Form1 frm1 = new xListView.Form1();
-
+            
 
             frm1.Text = "ListView par Hamza Filahi";
             frm1.Show();
@@ -62,6 +65,10 @@ namespace Exposé_TDI103
         {
             checked_list_box.TP_Checked_list_box frmChk = new checked_list_box.TP_Checked_list_box();
             frmChk.Text = "CheckedListBox par Walaa Allam";
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\walaa  (overide et checkedlistbox\\OVERRIDE C#.pptx"));
+            }
             frmChk.Show();
         }
 
@@ -155,6 +162,75 @@ namespace Exposé_TDI103
             frm2.ShowDialog();
             frm3.ShowDialog();
             frm4.ShowDialog();
+        }
+
+        private void btnTHConsole_Click(object sender, EventArgs e)
+        {
+            thread2.Program.Main(new string[5]);
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\linq et thread messaoudi\\MULTI THREADING.pptx"));
+            }
+        }
+
+        private void btnTHForm_Click(object sender, EventArgs e)
+        {
+            threadWin.Form1 frm = new threadWin.Form1();
+            //threadWin.Form2 frm2 = new threadWin.Form2();
+            //threadWin.Form3 frm3 = new threadWin.Form3();
+
+            frm.Text = "Threads Formulaire par Amine Messaoudi";
+            //frm2.Text = "Threads Formulaire par Amine Messaoudi";
+            //frm3.Text = "Threads Formulaire par Amine Messaoudi";
+
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\linq et thread messaoudi\\MULTI THREADING.pptx"));
+            }
+            frm.ShowDialog();
+
+        }
+
+        private void btnOverride_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\Walaa OVERRIDE\\OVERRIDE C#.pptx"));
+            }
+
+        }
+
+        private void btnColl_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\collections  SihamFallah\\CourCsharpT.pptx"));
+            }
+        }
+
+        private void btnLinQ_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\linq et thread messaoudi\\PRlinQ.pptx"));
+            }
+        }
+
+        private void btnDGV_Click(object sender, EventArgs e)
+        {
+            datagridview.Form1 frm = new datagridview.Form1();
+            frm.Text = "DataGridView par Ismail Chaiq";
+            frm.Show();
+        }
+
+        private void btnException_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ce TP dispose d'un exposé PowerPoint. Voulez-vous l'ouvrir ?", "Ouverture de l'exposé", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(Path.Combine(Application.StartupPath, "..\\..\\exposé tdi 103\\ismail chaiq dataGridView\\Presentation.pptx"));
+            }
+            GstException.Form1 form = new GstException.Form1();
+            form.Text = "Gestion des exceptions par Ismail Chaiq";
         }
     }
 }

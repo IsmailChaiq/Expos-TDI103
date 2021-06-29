@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{098AB092-0BB1-4F7A-9EA5-E79C7A50135A}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Exposé_TDI103</RootNamespace>
     <AssemblyName>Exposé TDI103</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -33,18 +33,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.UI.WinForms.1.5.3">
-      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
-      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
-      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu_UI_v1.52.dll</HintPath>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Bunifu.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -107,9 +102,13 @@
       <Project>{5e2a845b-2dd3-412a-af6c-e6534d5f859e}</Project>
       <Name>Chart c sharpe</Name>
     </ProjectReference>
-    <ProjectReference Include="exposé tdi 103\collections  SihamFallah\Csharp1\Collections.csproj">
+    <ProjectReference Include="exposé tdi 103\amine messaoudi LinQ\LinQ\LinQ.csproj">
+      <Project>{41411d55-98e1-41dc-8500-54304a7668c7}</Project>
+      <Name>LinQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\collections  SihamFallah\Csharp1\Csharp1.csproj">
       <Project>{4cba050b-f5da-482e-84fc-5f1516315fe4}</Project>
-      <Name>Collections</Name>
+      <Name>Csharp1</Name>
     </ProjectReference>
     <ProjectReference Include="exposé tdi 103\Hafssa Naghar NotifyIcon\NotifyIcon.csproj">
       <Project>{c58bbc25-0856-4877-9071-e06dd53badb6}</Project>
@@ -126,6 +125,14 @@
     <ProjectReference Include="exposé tdi 103\ihsane numericupdown\WindowsFormsApp12\NumericUpDown.csproj">
       <Project>{614696cb-8146-4f09-a8ae-e133f5034c42}</Project>
       <Name>NumericUpDown</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\ismail chaiq dataGridView\datagridview\datagridview.csproj">
+      <Project>{bfd0bb1d-e4f2-40fa-84ea-2e55c9b1ce28}</Project>
+      <Name>datagridview</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\ismail chaiq dataGridView\GstException\GstException.csproj">
+      <Project>{bca5df60-b457-401b-b43e-3fc26624d5b6}</Project>
+      <Name>GstException</Name>
     </ProjectReference>
     <ProjectReference Include="exposé tdi 103\linq et thread messaoudi\thread console\thread2.csproj">
       <Project>{59b1af74-3d97-4721-a65d-eb9fd699415a}</Project>

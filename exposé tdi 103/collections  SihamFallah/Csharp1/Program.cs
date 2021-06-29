@@ -9,7 +9,7 @@ namespace Csharp1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
 
@@ -19,36 +19,36 @@ namespace Csharp1
             T[1] = 222;
             T[2] = 5;
 
-            //for (int i = 0; i < T.Length; i++)
-            //{
-            //    Console.WriteLine(T[i]);
-            //}
+            for (int i = 0; i < T.Length; i++)
+            {
+                Console.WriteLine(T[i]);
+            }
 
-            //foreach (int x in T)
-            //{
-            //    Console.WriteLine(x);
+            foreach (int x in T)
+            {
+                Console.WriteLine(x);
 
-            //}
-            //Console.WriteLine("********************************");
-            //string[] t = new string[] { "aaaa", "bbbbbb", "ddddd" };
-            //t[2] = "alaoui";
-            //foreach (string x in t)
-            //{
-            //    Console.WriteLine(x);
-            //}
-            //Console.WriteLine("********************************");
+            }
+            Console.WriteLine("********************************");
+            string[] t = new string[] { "aaaa", "bbbbbb", "ddddd" };
+            t[2] = "alaoui";
+            foreach (string x in t)
+            {
+                Console.WriteLine(x);
+            }
+            Console.WriteLine("********************************");
 
-            //int[] TV = new int[3];    // taille 3 element sans declaration de  valeurs 
+            int[] TV = new int[3];    // taille 3 element sans declaration de  valeurs 
 
-            //Console.WriteLine(TV[0]);// affiche 0  
-            //Console.WriteLine(TV[1]); // affiche 0
-            //Console.WriteLine(TV[2]); // affiche 0
+            Console.WriteLine(TV[0]);// affiche 0  
+            Console.WriteLine(TV[1]); // affiche 0
+            Console.WriteLine(TV[2]); // affiche 0
 
             //string[,] t = new string[2, 3]; // declaration tableau de deux dimension 
             //t[0, 0] = "wwwww";
             //t[0, 1] = "vvvvv";
             //t[0, 2] = "xxxxx";
-            //Console.WriteLine(t[0, 0] + " " + t[0, 1] + " " + t[0,2] );
+            //Console.WriteLine(t[0, 0] + " " + t[0, 1] + " " + t[0, 2]);
 
 
 
@@ -149,47 +149,47 @@ namespace Csharp1
             //    s.Push("Achouri samir");
             //    s.Push("alaoui mohamed");
             //    s.Push("tdi");
-                //foreach (object x in s)
-                //{
-                //    Console.WriteLine(x);
-                //}
-                //Console.WriteLine("**********************");
-                //Console.WriteLine(s.Peek()); // il affiche le dernier element ajouté
-                //Console.WriteLine("**********************");
-                //Console.WriteLine(  s.Pop());                    // supprimer le dernier element ajouté
-                //Console.WriteLine(s.Peek());
+            //foreach (object x in s)
+            //{
+            //    Console.WriteLine(x);
+            //}
+            //Console.WriteLine("**********************");
+            //Console.WriteLine(s.Peek()); // il affiche le dernier element ajouté
+            //Console.WriteLine("**********************");
+            //Console.WriteLine(  s.Pop());                    // supprimer le dernier element ajouté
+            //Console.WriteLine(s.Peek());
 
-                //IEnumerator i = s.GetEnumerator();     //afficher tout les element      
-                //while (i.MoveNext())
-                //{
-                //    Console.WriteLine(i.Current);
-                //}
-
-
+            //IEnumerator i = s.GetEnumerator();     //afficher tout les element      
+            //while (i.MoveNext())
+            //{
+            //    Console.WriteLine(i.Current);
+            //}
 
 
 
 
-                //exemple list d'objet pour afficher le prenom
-
-                //List<Personne> lO = new List<Personne> { };
-                //lO.Add(new Personne("aaaaa", "cccccc", 10));
-                //Console.WriteLine(lO[0].Fname);
 
 
-                ////exemple tableau d'objet pour afficher nom 
-                
-                //Personne[] TE = new Personne[1];
+            //exemple list d'objet pour afficher le prenom
 
-                //TE[0] = new Personne("aaaaa", "bbbbb", 1000);
-                //Console.WriteLine(TE[0].Lname);
-
+            //List<Personne> lO = new List<Personne> { };
+            //lO.Add(new Personne("aaaaa", "cccccc", 10));
+            //Console.WriteLine(lO[0].Fname);
 
 
-                
+            ////exemple tableau d'objet pour afficher nom 
+
+            //Personne[] TE = new Personne[1];
+
+            //TE[0] = new Personne("aaaaa", "bbbbb", 1000);
+            //Console.WriteLine(TE[0].Lname);
 
 
-                Console.ReadLine();
+
+
+
+
+            Console.ReadLine();
         }
           
     }

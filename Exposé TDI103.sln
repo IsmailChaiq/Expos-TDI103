@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundWorker", "exposé
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chart c sharpe", "exposé tdi 103\ALAE JELOUANE (CHART)\Chart c sharpe\Chart c sharpe.csproj", "{5E2A845B-2DD3-412A-AF6C-E6534D5F859E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "exposé tdi 103\collections  SihamFallah\Csharp1\Collections.csproj", "{4CBA050B-F5DA-482E-84FC-5F1516315FE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp1", "exposé tdi 103\collections  SihamFallah\Csharp1\Csharp1.csproj", "{4CBA050B-F5DA-482E-84FC-5F1516315FE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyIcon", "exposé tdi 103\Hafssa Naghar NotifyIcon\NotifyIcon.csproj", "{C58BBC25-0856-4877-9071-E06DD53BADB6}"
 EndProject
@@ -50,6 +50,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checked_list_box", "exposé tdi 103\walaa  (overide et checkedlistbox\checked_list_box\checked_list_box.csproj", "{A6E21D3C-F67F-4634-A191-751D840F3345}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OVERRIDE", "exposé tdi 103\Walaa OVERRIDE\OVERRIDE\OVERRIDE.csproj", "{FBECA3F3-F556-4087-905C-F016A1B92165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ", "exposé tdi 103\amine messaoudi LinQ\LinQ\LinQ.csproj", "{41411D55-98E1-41DC-8500-54304A7668C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datagridview", "exposé tdi 103\ismail chaiq dataGridView\datagridview\datagridview.csproj", "{BFD0BB1D-E4F2-40FA-84EA-2E55C9B1CE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GstException", "exposé tdi 103\ismail chaiq dataGridView\GstException\GstException.csproj", "{BCA5DF60-B457-401B-B43E-3FC26624D5B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +159,18 @@ Global
 		{FBECA3F3-F556-4087-905C-F016A1B92165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBECA3F3-F556-4087-905C-F016A1B92165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBECA3F3-F556-4087-905C-F016A1B92165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41411D55-98E1-41DC-8500-54304A7668C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41411D55-98E1-41DC-8500-54304A7668C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41411D55-98E1-41DC-8500-54304A7668C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41411D55-98E1-41DC-8500-54304A7668C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD0BB1D-E4F2-40FA-84EA-2E55C9B1CE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD0BB1D-E4F2-40FA-84EA-2E55C9B1CE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD0BB1D-E4F2-40FA-84EA-2E55C9B1CE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD0BB1D-E4F2-40FA-84EA-2E55C9B1CE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA5DF60-B457-401B-B43E-3FC26624D5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA5DF60-B457-401B-B43E-3FC26624D5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA5DF60-B457-401B-B43E-3FC26624D5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA5DF60-B457-401B-B43E-3FC26624D5B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

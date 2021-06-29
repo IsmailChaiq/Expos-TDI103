@@ -29,10 +29,7 @@ namespace Exposé_TDI103
         /// </summary>
         private void InitializeComponent()
         {
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExpose));
-            this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
-            this.tabTool = new System.Windows.Forms.TabPage();
+            this.btnUserControl = new System.Windows.Forms.Button();
             this.btnWebBrowser = new System.Windows.Forms.Button();
             this.btnTreeViewList = new System.Windows.Forms.Button();
             this.btnNumericUpDown = new System.Windows.Forms.Button();
@@ -49,79 +46,34 @@ namespace Exposé_TDI103
             this.btnBackgroundWorker = new System.Windows.Forms.Button();
             this.btnComboBox = new System.Windows.Forms.Button();
             this.btnListView = new System.Windows.Forms.Button();
-            this.tabCours = new System.Windows.Forms.TabPage();
-            this.btnUserControl = new System.Windows.Forms.Button();
-            this.bunifuPages1.SuspendLayout();
-            this.tabTool.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnTHConsole = new System.Windows.Forms.Button();
+            this.btnTHForm = new System.Windows.Forms.Button();
+            this.btnOverride = new System.Windows.Forms.Button();
+            this.btnColl = new System.Windows.Forms.Button();
+            this.btnDGV = new System.Windows.Forms.Button();
+            this.btnException = new System.Windows.Forms.Button();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuPages1
+            // btnUserControl
             // 
-            this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.bunifuPages1.AllowTransitions = true;
-            this.bunifuPages1.Controls.Add(this.tabTool);
-            this.bunifuPages1.Controls.Add(this.tabCours);
-            this.bunifuPages1.ItemSize = new System.Drawing.Size(96, 36);
-            this.bunifuPages1.Location = new System.Drawing.Point(-1, 0);
-            this.bunifuPages1.Multiline = true;
-            this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabTool;
-            this.bunifuPages1.PageIndex = 0;
-            this.bunifuPages1.PageName = "tabTool";
-            this.bunifuPages1.PageTitle = "ToolBox";
-            this.bunifuPages1.SelectedIndex = 0;
-            this.bunifuPages1.Size = new System.Drawing.Size(804, 449);
-            this.bunifuPages1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.bunifuPages1.TabIndex = 0;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuPages1.Transition = animation1;
-            this.bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
-            // 
-            // tabTool
-            // 
-            this.tabTool.Controls.Add(this.btnUserControl);
-            this.tabTool.Controls.Add(this.btnWebBrowser);
-            this.tabTool.Controls.Add(this.btnTreeViewList);
-            this.tabTool.Controls.Add(this.btnNumericUpDown);
-            this.tabTool.Controls.Add(this.btnNotifyIcon);
-            this.tabTool.Controls.Add(this.btnMonthCalendar);
-            this.tabTool.Controls.Add(this.btnMenuStrio);
-            this.tabTool.Controls.Add(this.btnMdiParent);
-            this.tabTool.Controls.Add(this.btnMaskedTextBox);
-            this.tabTool.Controls.Add(this.btnFileSystemWatcher);
-            this.tabTool.Controls.Add(this.btnVScrollBar);
-            this.tabTool.Controls.Add(this.btnTimer);
-            this.tabTool.Controls.Add(this.btnChekedListBox);
-            this.tabTool.Controls.Add(this.btnChart);
-            this.tabTool.Controls.Add(this.btnBackgroundWorker);
-            this.tabTool.Controls.Add(this.btnComboBox);
-            this.tabTool.Controls.Add(this.btnListView);
-            this.tabTool.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabTool.Location = new System.Drawing.Point(4, 4);
-            this.tabTool.Name = "tabTool";
-            this.tabTool.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTool.Size = new System.Drawing.Size(796, 405);
-            this.tabTool.TabIndex = 0;
-            this.tabTool.Text = "ToolBox";
-            this.tabTool.UseVisualStyleBackColor = true;
+            this.btnUserControl.Location = new System.Drawing.Point(409, 23);
+            this.btnUserControl.Name = "btnUserControl";
+            this.btnUserControl.Size = new System.Drawing.Size(92, 73);
+            this.btnUserControl.TabIndex = 16;
+            this.btnUserControl.Text = "UserControl\r\n\r\nMehdi Saadi";
+            this.btnUserControl.UseVisualStyleBackColor = true;
+            this.btnUserControl.Click += new System.EventHandler(this.btnUserControl_Click);
             // 
             // btnWebBrowser
             // 
-            this.btnWebBrowser.Location = new System.Drawing.Point(695, 85);
+            this.btnWebBrowser.Location = new System.Drawing.Point(311, 260);
             this.btnWebBrowser.Name = "btnWebBrowser";
             this.btnWebBrowser.Size = new System.Drawing.Size(92, 73);
             this.btnWebBrowser.TabIndex = 15;
@@ -131,7 +83,7 @@ namespace Exposé_TDI103
             // 
             // btnTreeViewList
             // 
-            this.btnTreeViewList.Location = new System.Drawing.Point(597, 85);
+            this.btnTreeViewList.Location = new System.Drawing.Point(213, 260);
             this.btnTreeViewList.Name = "btnTreeViewList";
             this.btnTreeViewList.Size = new System.Drawing.Size(92, 73);
             this.btnTreeViewList.TabIndex = 14;
@@ -141,7 +93,7 @@ namespace Exposé_TDI103
             // 
             // btnNumericUpDown
             // 
-            this.btnNumericUpDown.Location = new System.Drawing.Point(499, 85);
+            this.btnNumericUpDown.Location = new System.Drawing.Point(115, 260);
             this.btnNumericUpDown.Name = "btnNumericUpDown";
             this.btnNumericUpDown.Size = new System.Drawing.Size(92, 73);
             this.btnNumericUpDown.TabIndex = 13;
@@ -151,7 +103,7 @@ namespace Exposé_TDI103
             // 
             // btnNotifyIcon
             // 
-            this.btnNotifyIcon.Location = new System.Drawing.Point(401, 85);
+            this.btnNotifyIcon.Location = new System.Drawing.Point(17, 260);
             this.btnNotifyIcon.Name = "btnNotifyIcon";
             this.btnNotifyIcon.Size = new System.Drawing.Size(92, 73);
             this.btnNotifyIcon.TabIndex = 12;
@@ -161,7 +113,7 @@ namespace Exposé_TDI103
             // 
             // btnMonthCalendar
             // 
-            this.btnMonthCalendar.Location = new System.Drawing.Point(303, 85);
+            this.btnMonthCalendar.Location = new System.Drawing.Point(311, 102);
             this.btnMonthCalendar.Name = "btnMonthCalendar";
             this.btnMonthCalendar.Size = new System.Drawing.Size(92, 73);
             this.btnMonthCalendar.TabIndex = 11;
@@ -171,7 +123,7 @@ namespace Exposé_TDI103
             // 
             // btnMenuStrio
             // 
-            this.btnMenuStrio.Location = new System.Drawing.Point(205, 85);
+            this.btnMenuStrio.Location = new System.Drawing.Point(213, 102);
             this.btnMenuStrio.Name = "btnMenuStrio";
             this.btnMenuStrio.Size = new System.Drawing.Size(92, 73);
             this.btnMenuStrio.TabIndex = 10;
@@ -181,7 +133,7 @@ namespace Exposé_TDI103
             // 
             // btnMdiParent
             // 
-            this.btnMdiParent.Location = new System.Drawing.Point(107, 85);
+            this.btnMdiParent.Location = new System.Drawing.Point(115, 102);
             this.btnMdiParent.Name = "btnMdiParent";
             this.btnMdiParent.Size = new System.Drawing.Size(92, 73);
             this.btnMdiParent.TabIndex = 9;
@@ -191,7 +143,7 @@ namespace Exposé_TDI103
             // 
             // btnMaskedTextBox
             // 
-            this.btnMaskedTextBox.Location = new System.Drawing.Point(9, 85);
+            this.btnMaskedTextBox.Location = new System.Drawing.Point(17, 102);
             this.btnMaskedTextBox.Name = "btnMaskedTextBox";
             this.btnMaskedTextBox.Size = new System.Drawing.Size(92, 73);
             this.btnMaskedTextBox.TabIndex = 8;
@@ -201,7 +153,7 @@ namespace Exposé_TDI103
             // 
             // btnFileSystemWatcher
             // 
-            this.btnFileSystemWatcher.Location = new System.Drawing.Point(695, 6);
+            this.btnFileSystemWatcher.Location = new System.Drawing.Point(311, 181);
             this.btnFileSystemWatcher.Name = "btnFileSystemWatcher";
             this.btnFileSystemWatcher.Size = new System.Drawing.Size(92, 73);
             this.btnFileSystemWatcher.TabIndex = 7;
@@ -211,7 +163,7 @@ namespace Exposé_TDI103
             // 
             // btnVScrollBar
             // 
-            this.btnVScrollBar.Location = new System.Drawing.Point(597, 6);
+            this.btnVScrollBar.Location = new System.Drawing.Point(213, 181);
             this.btnVScrollBar.Name = "btnVScrollBar";
             this.btnVScrollBar.Size = new System.Drawing.Size(92, 73);
             this.btnVScrollBar.TabIndex = 6;
@@ -221,7 +173,7 @@ namespace Exposé_TDI103
             // 
             // btnTimer
             // 
-            this.btnTimer.Location = new System.Drawing.Point(499, 6);
+            this.btnTimer.Location = new System.Drawing.Point(115, 181);
             this.btnTimer.Name = "btnTimer";
             this.btnTimer.Size = new System.Drawing.Size(92, 73);
             this.btnTimer.TabIndex = 5;
@@ -231,7 +183,7 @@ namespace Exposé_TDI103
             // 
             // btnChekedListBox
             // 
-            this.btnChekedListBox.Location = new System.Drawing.Point(401, 6);
+            this.btnChekedListBox.Location = new System.Drawing.Point(17, 181);
             this.btnChekedListBox.Name = "btnChekedListBox";
             this.btnChekedListBox.Size = new System.Drawing.Size(92, 73);
             this.btnChekedListBox.TabIndex = 4;
@@ -241,7 +193,7 @@ namespace Exposé_TDI103
             // 
             // btnChart
             // 
-            this.btnChart.Location = new System.Drawing.Point(303, 6);
+            this.btnChart.Location = new System.Drawing.Point(311, 23);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(92, 73);
             this.btnChart.TabIndex = 3;
@@ -251,7 +203,7 @@ namespace Exposé_TDI103
             // 
             // btnBackgroundWorker
             // 
-            this.btnBackgroundWorker.Location = new System.Drawing.Point(205, 6);
+            this.btnBackgroundWorker.Location = new System.Drawing.Point(213, 23);
             this.btnBackgroundWorker.Name = "btnBackgroundWorker";
             this.btnBackgroundWorker.Size = new System.Drawing.Size(92, 73);
             this.btnBackgroundWorker.TabIndex = 2;
@@ -261,7 +213,7 @@ namespace Exposé_TDI103
             // 
             // btnComboBox
             // 
-            this.btnComboBox.Location = new System.Drawing.Point(107, 6);
+            this.btnComboBox.Location = new System.Drawing.Point(115, 23);
             this.btnComboBox.Name = "btnComboBox";
             this.btnComboBox.Size = new System.Drawing.Size(92, 73);
             this.btnComboBox.TabIndex = 1;
@@ -271,7 +223,7 @@ namespace Exposé_TDI103
             // 
             // btnListView
             // 
-            this.btnListView.Location = new System.Drawing.Point(9, 6);
+            this.btnListView.Location = new System.Drawing.Point(17, 23);
             this.btnListView.Name = "btnListView";
             this.btnListView.Size = new System.Drawing.Size(92, 73);
             this.btnListView.TabIndex = 0;
@@ -279,46 +231,147 @@ namespace Exposé_TDI103
             this.btnListView.UseVisualStyleBackColor = true;
             this.btnListView.Click += new System.EventHandler(this.btnListView_Click);
             // 
-            // tabCours
+            // tabControl1
             // 
-            this.tabCours.Location = new System.Drawing.Point(4, 4);
-            this.tabCours.Name = "tabCours";
-            this.tabCours.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCours.Size = new System.Drawing.Size(796, 405);
-            this.tabCours.TabIndex = 1;
-            this.tabCours.Text = "Cours C#";
-            this.tabCours.UseVisualStyleBackColor = true;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(2, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(684, 408);
+            this.tabControl1.TabIndex = 17;
             // 
-            // btnUserControl
+            // tabPage1
             // 
-            this.btnUserControl.Location = new System.Drawing.Point(303, 164);
-            this.btnUserControl.Name = "btnUserControl";
-            this.btnUserControl.Size = new System.Drawing.Size(92, 73);
-            this.btnUserControl.TabIndex = 16;
-            this.btnUserControl.Text = "UserControl\r\n\r\nMehdi Saadi";
-            this.btnUserControl.UseVisualStyleBackColor = true;
-            this.btnUserControl.Click += new System.EventHandler(this.btnUserControl_Click);
+            this.tabPage1.Controls.Add(this.btnDGV);
+            this.tabPage1.Controls.Add(this.btnListView);
+            this.tabPage1.Controls.Add(this.btnUserControl);
+            this.tabPage1.Controls.Add(this.btnFileSystemWatcher);
+            this.tabPage1.Controls.Add(this.btnWebBrowser);
+            this.tabPage1.Controls.Add(this.btnMaskedTextBox);
+            this.tabPage1.Controls.Add(this.btnVScrollBar);
+            this.tabPage1.Controls.Add(this.btnTreeViewList);
+            this.tabPage1.Controls.Add(this.btnMdiParent);
+            this.tabPage1.Controls.Add(this.btnComboBox);
+            this.tabPage1.Controls.Add(this.btnTimer);
+            this.tabPage1.Controls.Add(this.btnNumericUpDown);
+            this.tabPage1.Controls.Add(this.btnMenuStrio);
+            this.tabPage1.Controls.Add(this.btnBackgroundWorker);
+            this.tabPage1.Controls.Add(this.btnChekedListBox);
+            this.tabPage1.Controls.Add(this.btnNotifyIcon);
+            this.tabPage1.Controls.Add(this.btnMonthCalendar);
+            this.tabPage1.Controls.Add(this.btnChart);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(676, 382);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "ToolBox";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnException);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.btnTHConsole);
+            this.tabPage2.Controls.Add(this.btnTHForm);
+            this.tabPage2.Controls.Add(this.btnOverride);
+            this.tabPage2.Controls.Add(this.btnColl);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(676, 382);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Cours C#";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 73);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "LinQ\r\n\r\nAmine Messaoudi\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnLinQ_Click);
+            // 
+            // btnTHConsole
+            // 
+            this.btnTHConsole.Location = new System.Drawing.Point(6, 6);
+            this.btnTHConsole.Name = "btnTHConsole";
+            this.btnTHConsole.Size = new System.Drawing.Size(92, 73);
+            this.btnTHConsole.TabIndex = 4;
+            this.btnTHConsole.Text = "Threads Console\r\n\r\nAmine Messaoudi\r\n";
+            this.btnTHConsole.UseVisualStyleBackColor = true;
+            this.btnTHConsole.Click += new System.EventHandler(this.btnTHConsole_Click);
+            // 
+            // btnTHForm
+            // 
+            this.btnTHForm.Location = new System.Drawing.Point(104, 6);
+            this.btnTHForm.Name = "btnTHForm";
+            this.btnTHForm.Size = new System.Drawing.Size(92, 73);
+            this.btnTHForm.TabIndex = 5;
+            this.btnTHForm.Text = "Threads Formulaire\r\n\r\nAmine Messaoudi\r\n";
+            this.btnTHForm.UseVisualStyleBackColor = true;
+            this.btnTHForm.Click += new System.EventHandler(this.btnTHForm_Click);
+            // 
+            // btnOverride
+            // 
+            this.btnOverride.Location = new System.Drawing.Point(303, 6);
+            this.btnOverride.Name = "btnOverride";
+            this.btnOverride.Size = new System.Drawing.Size(92, 73);
+            this.btnOverride.TabIndex = 6;
+            this.btnOverride.Text = "Override\r\n\r\nWalaa Allam\r\n";
+            this.btnOverride.UseVisualStyleBackColor = true;
+            this.btnOverride.Click += new System.EventHandler(this.btnOverride_Click);
+            // 
+            // btnColl
+            // 
+            this.btnColl.Location = new System.Drawing.Point(401, 6);
+            this.btnColl.Name = "btnColl";
+            this.btnColl.Size = new System.Drawing.Size(92, 73);
+            this.btnColl.TabIndex = 7;
+            this.btnColl.Text = "Collection \r\n\r\nSiham Fallah\r\n";
+            this.btnColl.UseVisualStyleBackColor = true;
+            this.btnColl.Click += new System.EventHandler(this.btnColl_Click);
+            // 
+            // btnDGV
+            // 
+            this.btnDGV.Location = new System.Drawing.Point(409, 102);
+            this.btnDGV.Name = "btnDGV";
+            this.btnDGV.Size = new System.Drawing.Size(92, 73);
+            this.btnDGV.TabIndex = 17;
+            this.btnDGV.Text = "\r\nDataGridView\r\n\r\nIsmail Chaiq\r\n\r\n";
+            this.btnDGV.UseVisualStyleBackColor = true;
+            this.btnDGV.Click += new System.EventHandler(this.btnDGV_Click);
+            // 
+            // btnException
+            // 
+            this.btnException.Location = new System.Drawing.Point(499, 6);
+            this.btnException.Name = "btnException";
+            this.btnException.Size = new System.Drawing.Size(92, 73);
+            this.btnException.TabIndex = 9;
+            this.btnException.Text = "Gestion des Exceptions\r\n\r\nIsmail Chaiq\r\n";
+            this.btnException.UseVisualStyleBackColor = true;
+            this.btnException.Click += new System.EventHandler(this.btnException_Click);
             // 
             // frmExpose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bunifuPages1);
+            this.Controls.Add(this.tabControl1);
             this.Name = "frmExpose";
             this.Text = "Exposé TDI103";
-            this.bunifuPages1.ResumeLayout(false);
-            this.tabTool.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
-        private System.Windows.Forms.TabPage tabTool;
         private System.Windows.Forms.Button btnListView;
-        private System.Windows.Forms.TabPage tabCours;
         private System.Windows.Forms.Button btnComboBox;
         private System.Windows.Forms.Button btnWebBrowser;
         private System.Windows.Forms.Button btnTreeViewList;
@@ -335,6 +388,16 @@ namespace Exposé_TDI103
         private System.Windows.Forms.Button btnChart;
         private System.Windows.Forms.Button btnBackgroundWorker;
         private System.Windows.Forms.Button btnUserControl;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button btnTHConsole;
+        private System.Windows.Forms.Button btnTHForm;
+        private System.Windows.Forms.Button btnOverride;
+        private System.Windows.Forms.Button btnColl;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDGV;
+        private System.Windows.Forms.Button btnException;
     }
 }
 

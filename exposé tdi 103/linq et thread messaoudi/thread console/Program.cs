@@ -10,14 +10,14 @@ using System.Diagnostics;
 
 namespace thread2
 {
-    class Program
+    public class Program
     {
         static SemaphoreSlim attente = new SemaphoreSlim( 3); //objet pour limiter le nombre de threads qui fonctionne en meme temps
         static int cpt;
 
         static object verrou = new object();  // objet qui sert a effectuer la tache (verrouillage) 
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Stopwatch stp = new Stopwatch(); // calculer la duree
 
@@ -51,7 +51,7 @@ namespace thread2
 
             //a comparer avec la foncion3 pour comprendre la notion.isbackround sur un thread :
 
-            //Console.WriteLine("main commence ");  
+            //Console.WriteLine("main commence ");
             ////Console.ReadLine();
             ////Console.WriteLine("main encours ");
             ////Console.ReadLine();
@@ -85,7 +85,7 @@ namespace thread2
 
 
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
 
