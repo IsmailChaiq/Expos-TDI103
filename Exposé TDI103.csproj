@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{098AB092-0BB1-4F7A-9EA5-E79C7A50135A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Exposé_TDI103</RootNamespace>
+    <AssemblyName>Exposé TDI103</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\source\repos\IsmailChaiq\centredaffaire\Centre D'affaire\GestionPersonnel\Resources\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="exposé tdi 103\Abdelhadi Errafii Filesystemwatcher\Filesystemwatcher.csproj">
+      <Project>{ed1e26b4-877f-4258-9c5f-a6126d274d16}</Project>
+      <Name>Filesystemwatcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\ahmed enouri backroundworker\BackgroundWorker\BackgroundWorker.csproj">
+      <Project>{abdb33fa-9b38-49b1-9831-c0c389f70e09}</Project>
+      <Name>BackgroundWorker</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\ALAE JELOUANE %28CHART%29\Chart c sharpe\Chart c sharpe.csproj">
+      <Project>{5e2a845b-2dd3-412a-af6c-e6534d5f859e}</Project>
+      <Name>Chart c sharpe</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\collections  SihamFallah\Csharp1\Collections.csproj">
+      <Project>{4cba050b-f5da-482e-84fc-5f1516315fe4}</Project>
+      <Name>Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\Hafssa Naghar NotifyIcon\NotifyIcon.csproj">
+      <Project>{c58bbc25-0856-4877-9071-e06dd53badb6}</Project>
+      <Name>NotifyIcon</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\hamza filahi listview\ListViewV2\ListViewV2.csproj">
+      <Project>{6544def4-c3b0-4af0-88da-99427b80cc31}</Project>
+      <Name>ListViewV2</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\hamza filahi listview\ListView\ListView.csproj">
+      <Project>{7f97d9bd-be61-4610-8cba-9fc9f0a65819}</Project>
+      <Name>ListView</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\ihsane numericupdown\WindowsFormsApp12\NumericUpDown.csproj">
+      <Project>{614696cb-8146-4f09-a8ae-e133f5034c42}</Project>
+      <Name>NumericUpDown</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\linq et thread messaoudi\thread console\thread2.csproj">
+      <Project>{59b1af74-3d97-4721-a65d-eb9fd699415a}</Project>
+      <Name>thread2</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\linq et thread messaoudi\thread Win Form\threadWin.csproj">
+      <Project>{99779da1-33af-4ae4-8750-a5279fa4490e}</Project>
+      <Name>threadWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\mariam el wafi combobox\ComboBox\ComboBox1.csproj">
+      <Project>{01c5c9ec-7042-49ad-b513-4ef72c545825}</Project>
+      <Name>ComboBox1</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\mehdi saadi user control\user control.csproj">
+      <Project>{93ca31fc-ad23-44c8-b0de-2312aebf5131}</Project>
+      <Name>user control</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\miloud chibane webbrowser\Webbrowser\Webbrowser.csproj">
+      <Project>{85165c90-84c2-4b68-a3d2-15034c6a1bc0}</Project>
+      <Name>Webbrowser</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\MonthCalendar imad el fadil\MonthCalendar\MonthCalendar.csproj">
+      <Project>{ac072695-beff-44f1-adfe-369d9da2cd72}</Project>
+      <Name>MonthCalendar</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\OussamaSaadi TDI103\mdiParent3\mdiParent3.csproj">
+      <Project>{c02d95ce-9d2a-45dd-8d1c-bbd485240711}</Project>
+      <Name>mdiParent3</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\OussamaSaadi TDI103\MenuStrip4\MenuStrip4.csproj">
+      <Project>{b70a502a-2097-4a12-b4f0-941ef82e2e95}</Project>
+      <Name>MenuStrip4</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\reda aouad maskedtextbox\maskedtextbox\maskedtextbox.csproj">
+      <Project>{2d69f947-488d-4953-840c-c0e19ac7b0ef}</Project>
+      <Name>maskedtextbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\safaa boulif TreeViewList\TreeViewList\TreeViewList\TreeViewList.csproj">
+      <Project>{c6cdfab6-011c-4305-a440-eb56c1722d87}</Project>
+      <Name>TreeViewList</Name>
+    </ProjectReference>
+    <ProjectReference Include="exposé tdi 103\walaa  %28overide et checkedlistbox\checked_list_box\checked_list_box.csproj">
+      <Project>{a6e21d3c-f67f-4634-a191-751d840f3345}</Project>
+      <Name>checked_list_box</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
